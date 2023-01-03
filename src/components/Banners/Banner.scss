@@ -1,0 +1,76 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variable.scss";
+
+.banner {
+    transform: translateY(-80px);
+    .banner-inner {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid $desciption;
+        .banner-left {
+            width: 33.3333%;
+            img {
+                height: 50%;
+                width: 100%;
+                object-fit: cover;
+            }
+            &-content {
+                background: #fff;
+                height: 50%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                img {
+                    height: 65px;
+                    width: 65px;
+                    object-fit: contain;
+                }
+                .banner-title {
+                    padding-top: 20px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+                .banner-description {
+                    color: $desciption;
+                    padding-top: 20px;
+                }
+            }
+        }
+        .banner-center {
+            width: 33.3333%;
+            img {
+                height: 50%;
+                width: 100%;
+                object-fit: cover;
+            }
+            &-content {
+                background: #fff;
+                height: 50%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                img {
+                    height: 60px;
+                    width: 60px;
+                }
+                .banner-title {
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding-top: 20px;
+                    text-transform: uppercase;
+                }
+                .banner-description {
+                    color: $desciption;
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}

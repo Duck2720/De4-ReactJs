@@ -1,0 +1,55 @@
+@import "./../../../styles/mixin.scss";
+@import "./../../../styles/default.scss";
+
+.top-selling-inner {
+    .selling-title {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      li {
+        list-style-type: none;
+        p {
+          display: inline-block;
+          font-size: 18px;
+          font-weight: 600;
+          text-transform: uppercase;
+          padding: 13px 18px;
+          cursor: pointer;
+        }
+        .active {
+          color: red;
+          border-bottom: 2px solid red;
+        }
+      }
+    }
+    .selling-products {
+       .top-sellings {
+            .hidden {
+                margin-top: 18px;
+            margin: 0 -15px;
+            display: flex;
+            flex-wrap: wrap;
+            cursor: pointer;
+            }
+       }
+       .featured {
+            .hidden {
+                margin-top: 18px;
+                margin: 0 -15px;
+                display: flex;
+                flex-wrap: wrap;
+                cursor: pointer;
+            }
+       }
+       .most {
+            .hidden {
+                margin-top: 18px;
+                margin: 0 -15px;
+                display: flex;
+                flex-wrap: wrap;
+                cursor: pointer;
+            }
+   }
+    }
+  }
+  

@@ -1,0 +1,88 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variable.scss";
+
+.footer {
+    &-inner {
+        background: $bg-footer-top;
+        .footer-top {
+            border-bottom: 1px solid $desciption;
+            height: 355px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            img {
+                margin-top: 50px;
+            }
+            .footer-desciption {
+                width: 66.6666%;
+                color: $desciption;
+                margin-top: 40px;
+                font-size: 13px;
+                text-align: center;
+            }
+            .sumary {
+                margin-top: 50px;
+                i {
+                    color: $desciption;
+                    margin:0 25px;
+                    font-size: 18px;
+                }
+            }
+        }
+        .footer-contact {
+            display: flex;
+            flex-direction: row;
+            .footer-item {
+                width: 25%;
+                padding-top: 70px;
+                span {
+                    color: $desciption;
+                    font-size: 14px;
+                    margin-bottom: 25px;
+                }
+                i {
+                    font-size: 14px;
+                    color: $desciption;
+                    margin-right: 15px;
+                }
+                i:first-child {
+                    height: 14px;
+                    width: 14px;
+                }
+                &-title {
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                }
+                &-adress {
+                   margin-bottom: 22px;
+                
+                }
+                &-phone {
+                   margin-bottom: 22px;
+                    
+                }
+                &-mail {
+                   margin-bottom: 22px;
+                    
+                }
+                &-time {
+                    margin-bottom: 22px;
+    
+                }
+            }
+        }
+        .footer-bottom {
+            background: $bg-footer-bot;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $desciption;
+            font-style: 14px;
+            height: 50px;
+        }
+    }
+}

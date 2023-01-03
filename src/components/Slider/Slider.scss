@@ -1,0 +1,78 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variable.scss";
+
+.main-content {
+    .slider {
+        position: relative;
+        width: 100%;
+        &-item {
+            position: relative;
+            .backgound-img {
+                position: absolute;
+                top: 0;
+                bottom: 7px;
+                left: 0;
+                right: 0;
+                background: #000;
+                opacity: .2;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+            }
+            .slider-content {
+                position: absolute;
+                top: 47.5%;
+                left: 50%;
+                @include transform(translate(-50%,0));
+                .slider-title {
+                    font-size: 60px;
+                    color: #fff;
+                    position: absolute;
+                    font-weight: bold;
+                    top: -164px;
+                    left: 8px;
+                }
+                span {
+                    font-size: 40px;
+                    color: #fff;
+                    font-weight: bold;
+                    position: absolute;
+                    left: 8px;
+                    top: -81px;
+                }
+                .slider-summary {
+                    color: #fff;
+                    width: 46%;
+                    margin-top: 10px;
+                    position: absolute;
+                    top: -11px;
+                    font-size: 14px;
+                    line-height: 23px;
+                    left: 12px;
+                }
+                .slider-btn {
+                    width: 170px;
+                    height: 50px;
+                    color: #fff;
+                    position: absolute;
+                    top: 289px;
+                    border: 1px solid #fff;
+                    line-height: 50px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    left: 12px;
+                    font-size: 14px;
+                    top: 123px;
+                }
+            }
+            .slider-img {
+                display: none;
+                position: absolute;
+                top: 36.5%;
+                right: 49.5%;
+                @include transform(translate(138%,40px))
+            }
+        }
+    }
+}

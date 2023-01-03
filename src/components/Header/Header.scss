@@ -1,0 +1,69 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variable.scss";
+
+
+.cover {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    opacity: 0;
+    z-index: -999;
+}
+.cover .cover-active {
+    opacity: 0.9;
+    z-index: 100;
+    @include transit(all, 0.5s);
+}
+
+.header {
+    .cover-active {
+        opacity: 0.9;
+        z-index: 100;
+        @include transit(all, 0.5s);
+    }
+    position: fixed;
+    color: #fff;
+    font-size: 16px;
+    z-index: 999;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.4);
+    .logo-mobile {
+        text-align: center;
+        display: none;
+    }
+    &-inner {
+        position: relative;
+        height: 100px;
+        @include flex();
+        .nav-icon {
+            display: none;
+        }
+        .logo {
+            width: 200px;
+        }
+        .navbar {
+            .nav-title {
+                display: none;
+            }
+            @include flex-row();
+            padding-left: 30px;
+            a {
+                color: #fff;
+                padding-right: 53px ;
+                cursor: pointer;
+            }
+        }
+        .menu {
+            @include flex-row();
+            i, span {
+                padding-left: 25px;
+            }
+        }
+    }
+}

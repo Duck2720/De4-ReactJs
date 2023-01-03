@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none; 
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  &:hover {
+      color: #000;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+      list-style: none;
+  }
+}
+
+// =========== Grid layout
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.container-fluid {
+  width: 100vw;
+  padding: 0 -15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: normal;
+}

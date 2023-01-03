@@ -1,0 +1,60 @@
+@import "../../../styles/mixin.scss";
+@import "../../../styles/variable.scss";
+
+.selling-items {
+    position: relative;
+    width: 24%;
+    height: 333px;
+    .item {
+        display: flex;
+        img {
+            position: absolute;
+            height: 192px;
+            width: 162px;
+            top: 19px;
+            left: 55px;
+        }
+        .selling-icons {
+            opacity: 0;
+            top: 20px;
+            right: 20px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            i {
+                color: $desciption;
+                line-height: 35px;
+                text-align: center;
+                border: 1px solid $desciption;
+                height: 35px;
+                width: 35px;
+                margin-top: 20px;
+                border-radius: 10px 0 10px 0 ;
+            }
+            i:hover {
+                background: red;
+                color: #fff;
+            }
+        }
+        .selling-icons.active {
+            opacity: 1;
+        }
+        .selling-icons:hover {
+            opacity: 1;
+        }
+
+    }
+    .item-title {
+        position: absolute;
+        top: 260px;
+        left: 30px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .item-price {
+        position: absolute;
+        top: 280px;
+        left: 30px;
+        font-weight: bold;
+    }
+}
